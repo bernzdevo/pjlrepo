@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1, maximum-scale=1" />
+    <title>Customer Website</title>
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/layout.css" rel="stylesheet" />
+    <style>
+        #mapholder {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-color: #0094ff;
+        }
+
+        #filedrag {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-color: #0094ff;
+        }
+
+        .holder {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Welcome to Customer's Site!
+        </h1>
+    </header>
+    <nav>
+        <div class="hamburger" id="ham">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="links" id="nav-link">
+            <a href="../index.html">Home</a>
+            <a href="pages/ViewCustomers.html">View Customers</a>
+            <a href="pages/AddCustomers.html">Add Customers</a>
+        </div>
+    </nav>
+
+    <section>
+        Message: <input type="text" id="txtMessage" /><br />
+        <button id="btnSend">Send</button>
+        <button id="btnLeave">Leave the Chat</button>
+        <div id="chatbox">
+
+        </div>
+    </section>
+
+
+    <section>
+        <div class="ball">
+
+        </div>
+    </section>
+    <section>
+        <canvas id="myCanvas" style="width:500px;height:500px;">Canvas not supported!</canvas>
+        <button id="btnUp">Up</button>
+    </section>
+    <section class="maps-and-file">
+        <div class="holder">
+            <p>Your current location!</p>
+            <br />
+            <div id="mapholder"></div>
+        </div>
+        <div class="holder">
+            <p>Drag your picture here!</p>
+            <form>
+                <input type="file" id="fileInput" />
+                <input type="button" id="btnRead" value="Read" />
+            </form>
+            <div id="content"></div>
+            <div id="filedrag"></div>
+        </div>
+    </section>
+    <section>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus in ornare. Suspendisse ultrices gravida dictum fusce ut placerat orci. Purus in massa tempor nec. At lectus urna duis convallis convallis. Ut ornare lectus sit amet est. Nam libero justo laoreet sit. Quis lectus nulla at volutpat diam ut. Praesent elementum facilisis leo vel fringilla est. At lectus urna duis convallis convallis tellus id. Ut ornare lectus sit amet est placerat in. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim.
+
+            Commodo elit at imperdiet dui accumsan sit amet nulla facilisi. Nunc mi ipsum faucibus vitae aliquet. Consequat interdum varius sit amet mattis vulputate enim nulla. Morbi enim nunc faucibus a pellentesque sit. Duis at tellus at urna condimentum mattis pellentesque id. Lectus quam id leo in vitae. Nulla porttitor massa id neque aliquam. Ac ut consequat semper viverra. Pretium viverra suspendisse potenti nullam ac tortor vitae. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat. Dignissim convallis aenean et tortor at risus viverra adipiscing. Augue mauris augue neque gravida. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Urna molestie at elementum eu. Tortor posuere ac ut consequat. Enim eu turpis egestas pretium aenean pharetra. Sollicitudin tempor id eu nisl nunc.
+        </p>
+        <p>
+            Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Orci dapibus ultrices in iaculis nunc sed augue. A diam sollicitudin tempor id. Morbi enim nunc faucibus a pellentesque sit. Nisl nisi scelerisque eu ultrices. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. At augue eget arcu dictum. Sagittis aliquam malesuada bibendum arcu vitae elementum. Aliquet lectus proin nibh nisl condimentum id venenatis a. Integer malesuada nunc vel risus commodo. Arcu non sodales neque sodales ut etiam sit amet. Sit amet risus nullam eget felis eget nunc lobortis mattis.
+        </p>
+        <p class="with-col">
+            Vestibulum rhoncus est pellentesque elit. Diam vel quam elementum pulvinar etiam non. A scelerisque purus semper eget duis at tellus at. Molestie nunc non blandit massa enim nec dui nunc. Lorem sed risus ultricies tristique nulla. Id diam vel quam elementum. At quis risus sed vulputate. Bibendum enim facilisis gravida neque convallis a cras. Massa vitae tortor condimentum lacinia quis vel. Massa sed elementum tempus egestas sed sed. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis eleifend quam adipiscing vitae proin. Id consectetur purus ut faucibus pulvinar elementum integer. Sem et tortor consequat id porta nibh venenatis.
+
+            Dictum at tempor commodo ullamcorper a lacus vestibulum. Quis blandit turpis cursus in hac habitasse platea dictumst. Risus sed vulputate odio ut enim blandit volutpat. Arcu bibendum at varius vel pharetra vel turpis nunc. Nisl nisi scelerisque eu ultrices vitae auctor. Dui sapien eget mi proin sed. Sed enim ut sem viverra. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Enim praesent elementum facilisis leo vel fringilla. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Ullamcorper sit amet risus nullam eget felis eget nunc. Dolor sed viverra ipsum nunc aliquet bibendum enim. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. At elementum eu facilisis sed odio. Viverra nam libero justo laoreet sit amet cursus. Sit amet luctus venenatis lectus magna fringilla. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Cursus sit amet dictum sit amet. Lorem donec massa sapien faucibus et molestie ac feugiat sed.
+        </p>
+    </section>
+    <footer>
+        Some Links
+    </footer>
+    <script>
+        var hamburger = document.getElementById("ham");
+        hamburger.addEventListener("click", displayLink);
+        function displayLink() {
+            var link = document.getElementById("nav-link");
+            if (link.className === "links") {
+                link.removeAttribute("class");
+            } else {
+                link.setAttribute("class", "links");
+            }
+        }
+        //Map Codes
+        var mapHolder = document.getElementById("mapholder");
+        var lat = 0;
+        var long = 0;
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, errorDetected);
+            } else {
+                mapHolder.innerHTML = "Geolocation is not supported by your browser!";
+            }
+            showMyMap();
+        }
+
+        function showPosition(position) {
+            lat = position.coords.latitude;
+            long = position.coords.longitude;
+            console.log(lat + " " + long);
+            showMyMap();
+        }
+        function errorDetected(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    mapHolder.innerHTML = "User denied geolocation";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    mapHolder.innerHTML = "Location not detected";
+                    break;
+                case error.TIMEOUT:
+                    mapHolder.innerHTML = "Location Timed Out";
+                    break;
+                case error.UNKNOWN_ERROR:
+                    mapHolder.innerHTML = "Unknown Error Occured";
+                    break;
+                default:
+            }
+
+        }
+        function showMyMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(lat, long),
+                zoom: 14,
+            };
+            var myLatLong = { lat: lat, lng: long };
+            var map = new google.maps.Map(document.getElementById("mapholder"), mapOptions);
+            //// Create a marker and set its position.
+            var marker = new google.maps.Marker({
+                map: map,
+                position: myLatLong,
+                title: 'Hello World!'
+            });
+
+        }
+
+        getLocation();
+    </script>
+    <script>
+        var topPos = 10;
+        var canvas = document.getElementById('myCanvas');
+        var btnUp = document.getElementById("btnUp");
+        var ctx = canvas.getContext('2d');
+        btnUp.addEventListener("click", function () {
+            topPos = topPos - 30;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "blue";
+            ctx.fillRect(10, topPos, 30, 20);
+            console.log(topPos);
+        });
+
+                //setInterval(function () {
+
+                //    topPos = topPos + 10;
+                //    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                //    ctx.fillStyle = "blue";
+                //    ctx.fillRect(10, topPos, 30, 20);
+                //    console.log(topPos);
+                //},100);
+
+
+
+                //function DrawShape(x) {
+                //   //ctx.clearRect(0,0,canvas.width,canvas.height);
+
+                //}
+
+                //ctx.fillStyle = "red";
+                //ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                //ctx.fillStyle = "blue";
+                //ctx.fillRect(0, 0, 50, 50);
+
+                //ctx.fillStyle = "green";
+                //ctx.beginPath();
+                //ctx.moveTo(230, 30);
+                //ctx.lineTo(290, 140);
+                //ctx.lineTo(170,140);
+                //ctx.closePath();
+                //ctx.fill();
+
+    </script>
+    <script src="scripts/chat.js"></script>
+    <script src="../scripts/app/app.js" type="module"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwnXo-5TvHuq6xo8aIk71tSomyJP8s8Ow&callback=showMyMap" async defer></script>
+</body>
+</html>

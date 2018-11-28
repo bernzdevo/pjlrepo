@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width , initial-scale=1, maximum-scale=1" />
+
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/layout.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>
+            Welcome to Customer's Site!
+        </h1>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="ViewCustomers.html">View Customers</a>
+        <a href="AddCustomers.html">Add Customers</a>
+    </nav>
+    <section>
+        <p>Add Customers</p>
+        <form id="frmCustomers">
+            <fieldset >
+                <legend>Personal Information</legend>
+                <label for="txtFname"> First name:</label>
+                <input type="text" id="txtFname" required placeholder="First Name" list="lstNames"/>
+                <datalist id="lstNames">
+                    <option value="John"></option>
+                    <option value="Jane"></option>
+                    <option value="Peter"></option>
+                </datalist>
+                <label for="txtLname"> Last name:</label>
+                <input type="text" id="txtLname" placeholder="Last Name" required/>
+                <label for="txtBday"> Birth date:</label>
+                <input type="date" id="txtBday" required />
+                <label for="optGender"> Gender:</label>
+                <select id="optGender" required>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+                <label for="optOccupation"> Occupation:</label>
+                <select id="optOccupation" required>
+                    <optgroup label="IT">
+                        <option value="programmer">Programmer</option>
+                        <option value="support">IT Support</option>
+                    </optgroup>
+                    <optgroup label="Others">
+                        <option value="business">Business Owner</option>
+                        <option value="baker">Baker</option>
+                    </optgroup>
+                </select>
+                Age:<input type="text" id="txtAge" required/>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="txtAddress">Address:</label>
+                <input type="text" id="txtAddress" placeholder="Address" required/>
+                <label for="txtEmail"> Email Address:</label>
+                <input type="email" id="txtEmail" placeholder="Email Address" required/>
+                <label for="txtPhone"> Phone:</label>
+                <input type="text" id="txtPhone" placeholder="Phone Number" pattern="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}" title="(123) 456-7890 or 123-456-7890" required />
+
+            </fieldset>
+            <input type="submit" value="Add Customers" />
+        </form>
+    </section>
+
+    <script src="../scripts/addCustomers.js"></script>
+</body>
+</html>

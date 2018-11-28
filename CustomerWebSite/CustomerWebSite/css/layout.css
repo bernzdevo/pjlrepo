@@ -1,0 +1,230 @@
+﻿@font-face {
+    font-family: 'masque';
+    src: url('fonts/masque.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'modular';
+    src: url('fonts/modular.otf') format('opentype');
+}
+
+h1 {
+    font-family: masque;
+    word-spacing: 50px;
+    text-shadow: 5px 5px 0px #ffffff;
+}
+
+p {
+    text-indent: 10px;
+}
+
+.with-col {
+    column-count: 3;
+}
+
+nav a {
+    border: 3px solid #ff8158;
+    /*border-radius: 20px;*/
+    padding: 5px;
+    text-decoration: none;
+    transition-property: background-color,font-size;
+    transition-duration: 0.5s,0.3s;
+    transition-timing-function: ease-in,ease-out;
+}
+
+    nav a:active {
+        color: #00ff21;
+    }
+
+    nav a:visited {
+        color: #000;
+    }
+
+    nav a:focus {
+        color: #ffd800;
+    }
+
+    nav a:hover {
+        background-color: #ff8158;
+        color: #fff;
+        font-size: 30px;
+    }
+
+p:first-letter {
+    font-family: masque;
+    font-size: 20px;
+}
+
+p::selection {
+    color: #00ff21;
+    background-color: black;
+}
+
+table {
+    border: solid 2px #c1eaef;
+}
+
+tr:nth-child(even) {
+    background-color: #e5e5e5;
+}
+
+
+.btnAction {
+    background-color: #007cce;
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 10px;
+    transition: transform 2s, background-image 2s ease-in,background-color 1s,color 1s;
+}
+
+    .btnAction:hover {
+        transform: scaleX(2);
+        transform-origin: center;
+        background-image: linear-gradient(90deg,#007cce,#00b9ff);
+        background-color: #00b9ff;
+        color: #fff;
+    }
+
+#logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.hamburger {
+    margin-left: 90%;
+}
+
+    .hamburger div {
+        display: none;
+        width: 50px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 20%;
+        margin: 6px 0;
+    }
+
+@keyframes ballAnimation {
+    0% {
+        background: green;
+        transform:translate(10px);
+    }
+
+    10% {
+        background: blue;
+        transform: translate(20px) scale(0.9);
+        transform-origin:bottom;
+    }
+
+    20% {
+        background: #00b9ff;
+        transform: translate(30px) scale(0.8);
+        transform-origin: bottom;
+    }
+
+    30% {
+        background: #ff006d;
+        transform: translate(40px) scale(0.7);
+        transform-origin: bottom;
+    }
+
+    40% {
+        background: #9ae680;
+        transform: translate(50px) scale(0.6);
+        transform-origin: bottom;
+    }
+
+    50% {
+        background: #abd5ee;
+        transform: translate(60px) scale(0.5);
+        transform-origin: bottom;
+    }
+
+    60% {
+        background: blue;
+        transform: translate(70px) scale(0.4);
+        transform-origin: bottom;
+    }
+
+    70% {
+        background: #414f60;
+        transform: translate(80px) scale(0.3);
+        transform-origin: bottom;
+    }
+
+    80% {
+        background: #0200e8;
+        transform: translate(90px) scale(0.2);
+        transform-origin: bottom;
+    }
+
+    90% {
+        background: #aeff00;
+        transform: translate(100px) scale(0.1);
+        transform-origin: bottom;
+    }
+
+    100% {
+        background: yellow;
+    }
+}
+
+
+.ball {
+    animation-name: ballAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fb0000;
+}
+
+
+
+
+/*Media Queries*/
+
+@media only screen and (max-device-width : 568px) {
+    .hamburger div {
+        display: block;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    nav a {
+        display: block;
+        font-size: 20px;
+        background-color: #a6fffc;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        height: 20px;
+        padding: 2px;
+        /*-moz-border-radius: 10%;
+        -webkit-border-radius: 10%;*/
+        border-radius: 10%;
+        font-size: 15px;
+    }
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+
+    .maps-and-file {
+        display: none;
+    }
+}

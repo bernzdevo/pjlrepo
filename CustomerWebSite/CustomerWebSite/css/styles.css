@@ -1,0 +1,35 @@
+﻿header {
+    background-color: #aaf2fa;
+    padding: 20px;
+}
+
+nav {
+    background-color: #25bdd8;
+    /*line-height:50px;*/
+    padding:7px;
+    padding-left:0px;
+}
+
+section {
+    border: solid 3px #000;
+}
+
+footer {
+    background-color: #0462f7;
+}
+
+input:valid {
+    border: green 2px solid;
+}
+
+input:invalid {
+    border: red 2px solid;
+}
+
+.AgeInvalid{
+    background-color:red;
+}
+.AgeValid {
+    background-color: green;
+}
+
